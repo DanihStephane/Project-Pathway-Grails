@@ -1,0 +1,2135 @@
+{
+	"info": {
+		"_postman_id": "b3bb6763-dbdf-452a-8452-bcc0cf5f0a2e",
+		"name": "TP-Grails",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cas de test OK",
+			"item": [
+				{
+					"name": "Poi",
+					"item": [
+						{
+							"name": "GET poi",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								},
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									},
+									{
+										"key": "Re",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8080/api/poi/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"poi",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE Poi",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8080/api/poi/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"poi",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "SAVE Poi",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Réserve naturelle d'Andasibe-Mantadia",
+											"type": "default"
+										},
+										{
+											"key": "description",
+											"value": "Découvrez la beauté naturelle de Madagascar lors de votre visite de la réserve naturelle d'Andasibe-Mantadia. ",
+											"type": "default"
+										},
+										{
+											"key": "pathwayId",
+											"value": "3",
+											"type": "default"
+										},
+										{
+											"key": "illustrations\n",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "lat",
+											"value": "2",
+											"type": "default"
+										},
+										{
+											"key": "lng",
+											"value": "3",
+											"type": "default"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/pois",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"pois"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Poi",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Réserve naturelle d'Andasibe-Mantadia 2",
+											"type": "default"
+										},
+										{
+											"key": "description",
+											"value": "Découvrez la beauté naturelle de Madagascar lors de votre visite de la réserve naturelle d'Andasibe-Mantadia. ",
+											"type": "default"
+										},
+										{
+											"key": "pathwayId",
+											"value": "3",
+											"type": "default"
+										},
+										{
+											"key": "illustrations\n",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "lat",
+											"value": "5",
+											"type": "default"
+										},
+										{
+											"key": "lng",
+											"value": "8",
+											"type": "default"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/poi/31",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"poi",
+										"31"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Poi (title and description)",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {
+									"accept": true
+								}
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Réserve naturelle d'Andasibe-Mantadia 3",
+											"type": "default"
+										},
+										{
+											"key": "description",
+											"value": "Découvrez la beauté naturelle de Madagascar lors de votre visite de la réserve naturelle d'Andasibe-Mantadia. (etc...)",
+											"type": "default"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/poi/31",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"poi",
+										"31"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET Pois",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8080/api/pois?page=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"pois"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Pathway",
+					"item": [
+						{
+							"name": "GET Pathway",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8080/api/parcour/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"parcour",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE Pathway",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8080/api/parcour/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"parcour",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Pathway (title and description)",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Parc National Tsingy de Bemaraha",
+											"type": "default"
+										},
+										{
+											"key": "description",
+											"value": "Les Tsingy de Bemaraha, véritables cathédrales de calcaire, sont les plus vastes de l’île Rouge.",
+											"type": "default"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/parcour/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"parcour",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Pathway",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Titre 1",
+											"type": "default"
+										},
+										{
+											"key": "description",
+											"value": "Description 1",
+											"type": "default"
+										},
+										{
+											"key": "moderateur",
+											"value": "1,2",
+											"type": "default"
+										},
+										{
+											"key": "illus",
+											"type": "file",
+											"src": "/C:/Users/ASUS/Downloads/bee3dc49d331140654537956a538d179.jpg"
+										},
+										{
+											"key": "poi",
+											"value": "7,8",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/parcour/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"parcour",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Pathway",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Parc National de l’Isalo",
+											"contentType": "",
+											"type": "default"
+										},
+										{
+											"key": "description",
+											"value": "Ajoutés à un panorama remarquable, des grottes, des rivières, des piscines naturelles, des pachypodiums et des lémuriens font de ce parc un incontournable.",
+											"type": "default"
+										},
+										{
+											"key": "moderateur",
+											"value": "1,2",
+											"type": "default"
+										},
+										{
+											"key": "illus",
+											"contentType": "",
+											"type": "file",
+											"src": "/C:/Users/ASUS/Downloads/bee3dc49d331140654537956a538d179.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/parcours",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"parcours"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Liste des parcours avec pagination",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8080/api/parcours?page=1&size=5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"parcours"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "size",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Cas de test KO",
+			"item": [
+				{
+					"name": "Poi",
+					"item": [
+						{
+							"name": "GET Poi",
+							"item": [
+								{
+									"name": "Id manquant",
+									"protocolProfileBehavior": {
+										"disabledSystemHeaders": {
+											"accept": true
+										},
+										"followAuthorizationHeader": false
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											},
+											{
+												"key": "Re",
+												"value": "",
+												"type": "default",
+												"disabled": true
+											}
+										],
+										"url": {
+											"raw": "http://localhost:8080/api/poi",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"poi"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Poi introuvable",
+									"protocolProfileBehavior": {
+										"disabledSystemHeaders": {
+											"accept": true
+										},
+										"followAuthorizationHeader": false
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											},
+											{
+												"key": "Re",
+												"value": "",
+												"type": "default",
+												"disabled": true
+											}
+										],
+										"url": {
+											"raw": "http://localhost:8080/api/poi/5000",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"poi",
+												"5000"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "DELETE Poi",
+							"item": [
+								{
+									"name": "Id manquant",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/poi",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"poi"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Utilisateur non autorisé",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/poi/29",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"poi",
+												"29"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Poi introuvable",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/poi/5000",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"poi",
+												"5000"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "GET Pois",
+							"item": [
+								{
+									"name": "Page manquante",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:8080/api/pois",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"pois"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Page inexistante",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:8080/api/pois?page=5000",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"pois"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "5000"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "UPDATE Poi",
+							"item": [
+								{
+									"name": "Id manquant",
+									"protocolProfileBehavior": {
+										"disabledSystemHeaders": {
+											"accept": true
+										}
+									},
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "Réserve naturelle d'Andasibe-Mantadia 2",
+													"type": "default"
+												},
+												{
+													"key": "description",
+													"value": "",
+													"type": "default"
+												},
+												{
+													"key": "pathwayId",
+													"value": "3",
+													"type": "default"
+												},
+												{
+													"key": "illustrations\n",
+													"type": "file",
+													"src": []
+												}
+											],
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/poi",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"poi"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Champ invalides",
+									"protocolProfileBehavior": {
+										"disabledSystemHeaders": {
+											"accept": true
+										}
+									},
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "Réserve naturelle d'Andasibe-Mantadia 2",
+													"type": "default"
+												},
+												{
+													"key": "description",
+													"value": "",
+													"type": "default"
+												},
+												{
+													"key": "pathwayId",
+													"value": "3",
+													"type": "default"
+												},
+												{
+													"key": "illustrations\n",
+													"type": "file",
+													"src": []
+												}
+											],
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/poi/31",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"poi",
+												"31"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Poi introuvable",
+									"protocolProfileBehavior": {
+										"disabledSystemHeaders": {
+											"accept": true
+										}
+									},
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "Réserve naturelle d'Andasibe-Mantadia 2",
+													"type": "default"
+												},
+												{
+													"key": "description",
+													"value": "",
+													"type": "default"
+												},
+												{
+													"key": "pathwayId",
+													"value": "3",
+													"type": "default"
+												},
+												{
+													"key": "illustrations\n",
+													"type": "file",
+													"src": []
+												}
+											],
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/poi/200",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"poi",
+												"200"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Non autorisé",
+									"protocolProfileBehavior": {
+										"disabledSystemHeaders": {
+											"accept": true
+										}
+									},
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "Réserve naturelle d'Andasibe-Mantadia 2",
+													"type": "default"
+												},
+												{
+													"key": "description",
+													"value": "Découvrez la beauté naturelle de Madagascar lors de votre visite de la réserve naturelle d'Andasibe-Mantadia. ",
+													"type": "default"
+												},
+												{
+													"key": "pathwayId",
+													"value": "3",
+													"type": "default"
+												},
+												{
+													"key": "illustrations\n",
+													"type": "file",
+													"src": []
+												}
+											],
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/poi/27",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"poi",
+												"27"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "UPDATE Poi(title and description)",
+							"item": [
+								{
+									"name": "Id manquant",
+									"protocolProfileBehavior": {
+										"disabledSystemHeaders": {
+											"accept": true
+										}
+									},
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "Réserve naturelle d'Andasibe-Mantadia 3",
+													"type": "default"
+												},
+												{
+													"key": "description",
+													"value": "Découvrez la beauté naturelle de Madagascar lors de votre visite de la réserve naturelle d'Andasibe-Mantadia. (etc...)",
+													"type": "default"
+												}
+											],
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/poi",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"poi"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Poi introuvable",
+									"protocolProfileBehavior": {
+										"disabledSystemHeaders": {
+											"accept": true
+										}
+									},
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "Réserve naturelle d'Andasibe-Mantadia 3",
+													"type": "default"
+												},
+												{
+													"key": "description",
+													"value": "Découvrez la beauté naturelle de Madagascar lors de votre visite de la réserve naturelle d'Andasibe-Mantadia. (etc...)",
+													"type": "default"
+												}
+											],
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/poi/3100",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"poi",
+												"3100"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Champs invalides",
+									"protocolProfileBehavior": {
+										"disabledSystemHeaders": {
+											"accept": true
+										}
+									},
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "Res",
+													"type": "default"
+												},
+												{
+													"key": "description",
+													"value": "Découvrez la beauté naturelle de Madagascar lors de votre visite de la réserve naturelle d'Andasibe-Mantadia. (etc...)",
+													"type": "default"
+												}
+											],
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/poi/2",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"poi",
+												"2"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Non autorisé",
+									"protocolProfileBehavior": {
+										"disabledSystemHeaders": {
+											"accept": true
+										}
+									},
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "Réserve naturelle d'Andasibe-Mantadia 3",
+													"type": "default"
+												},
+												{
+													"key": "description",
+													"value": "Découvrez la beauté naturelle de Madagascar lors de votre visite de la réserve naturelle d'Andasibe-Mantadia. (etc...)",
+													"type": "default"
+												}
+											],
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/poi/27",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"poi",
+												"27"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "SAVE Poi",
+							"item": [
+								{
+									"name": "Pathway invalide",
+									"protocolProfileBehavior": {
+										"disabledSystemHeaders": {
+											"accept": true
+										}
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "",
+													"description": "Pas vide et au moins 5 caractères",
+													"type": "default"
+												},
+												{
+													"key": "description",
+													"value": "Découvrez la beauté naturelle de Madagascar lors de votre visite de la réserve naturelle d'Andasibe-Mantadia. ",
+													"description": "Pas vide et au moins 5 caractères",
+													"type": "default"
+												},
+												{
+													"key": "pathwayId",
+													"value": "3",
+													"type": "default"
+												},
+												{
+													"key": "illustrations\n",
+													"type": "file",
+													"src": []
+												}
+											],
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/pois",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"pois"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Champs invalides",
+									"protocolProfileBehavior": {
+										"disabledSystemHeaders": {
+											"accept": true
+										}
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "",
+													"description": "Pas vide et au moins 5 caractères",
+													"type": "default"
+												},
+												{
+													"key": "description",
+													"value": "Découvrez la beauté naturelle de Madagascar lors de votre visite de la réserve naturelle d'Andasibe-Mantadia. ",
+													"type": "default"
+												},
+												{
+													"key": "pathwayId",
+													"value": "300",
+													"type": "default"
+												},
+												{
+													"key": "illustrations\n",
+													"type": "file",
+													"src": []
+												}
+											],
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/pois",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"pois"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Utilisateur non autorisé",
+									"protocolProfileBehavior": {
+										"disabledSystemHeaders": {
+											"accept": true
+										}
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "Andasibe-Mantadia",
+													"type": "default"
+												},
+												{
+													"key": "description",
+													"value": "Découvrez la beauté naturelle de Madagascar lors de votre visite de la réserve naturelle d'Andasibe-Mantadia. ",
+													"type": "default"
+												},
+												{
+													"key": "pathwayId",
+													"value": "8",
+													"type": "default"
+												},
+												{
+													"key": "illustrations\n",
+													"type": "file",
+													"src": []
+												}
+											],
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/pois",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"pois"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Patway",
+					"item": [
+						{
+							"name": "GET Pathway",
+							"item": [
+								{
+									"name": "Paramètre id manquant",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:8080/api/parcour",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"parcour"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Pathway non trouvé",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:8080/api/parcour/18",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"parcour",
+												"18"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "DELETE Pathway",
+							"item": [
+								{
+									"name": "Id du patway manquant",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:8080/api/parcour",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"parcour"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Pathway introuvable",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:8080/api/parcour/189",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"parcour",
+												"189"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Utilisateur non autorisé",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"url": {
+											"raw": "http://localhost:8080/api/parcour/9",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"parcour",
+												"9"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "UPDATE Pathway",
+							"item": [
+								{
+									"name": "Id manquant",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "Titre 1",
+													"type": "default"
+												},
+												{
+													"key": "description",
+													"value": "Description 1",
+													"type": "default"
+												},
+												{
+													"key": "moderateur",
+													"value": "1,2",
+													"type": "default"
+												},
+												{
+													"key": "illus",
+													"type": "file",
+													"src": "/C:/Users/ASUS/Downloads/bee3dc49d331140654537956a538d179.jpg"
+												},
+												{
+													"key": "poi",
+													"value": "12,13",
+													"type": "default"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/parcour",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"parcour"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Pathway introuvable",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "Titre 1",
+													"type": "default"
+												},
+												{
+													"key": "description",
+													"value": "Description 1",
+													"type": "default"
+												},
+												{
+													"key": "moderateur",
+													"value": "1,2",
+													"type": "default"
+												},
+												{
+													"key": "illus",
+													"type": "file",
+													"src": "/C:/Users/ASUS/Downloads/bee3dc49d331140654537956a538d179.jpg"
+												},
+												{
+													"key": "poi",
+													"value": "12,13",
+													"type": "default"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/parcour/189",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"parcour",
+												"189"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Non autorisé",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "Titre 1",
+													"type": "default"
+												},
+												{
+													"key": "description",
+													"value": "Description 1",
+													"type": "default"
+												},
+												{
+													"key": "moderateur",
+													"value": "1,2",
+													"type": "default"
+												},
+												{
+													"key": "illus",
+													"type": "file",
+													"src": "/C:/Users/ASUS/Downloads/bee3dc49d331140654537956a538d179.jpg"
+												},
+												{
+													"key": "poi",
+													"value": "12,13",
+													"type": "default"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/parcour/10",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"parcour",
+												"10"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Paramètre(s) non valide(s)",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "Titre 1",
+													"type": "default"
+												},
+												{
+													"key": "description",
+													"value": "Description 1",
+													"type": "default"
+												},
+												{
+													"key": "moderateur",
+													"value": "1,2,19",
+													"type": "default"
+												},
+												{
+													"key": "illus",
+													"type": "file",
+													"src": "/C:/Users/ASUS/Downloads/bee3dc49d331140654537956a538d179.jpg"
+												},
+												{
+													"key": "poi",
+													"value": "5,6",
+													"type": "default"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/parcour/3",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"parcour",
+												"3"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "UPDATE Pathway(title and description)",
+							"item": [
+								{
+									"name": "Id manquant",
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "Ranomafana",
+													"type": "default"
+												},
+												{
+													"key": "description",
+													"value": "Geyser",
+													"type": "default"
+												}
+											],
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/parcour",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"parcour"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Pathway introubable",
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "Ranomafana",
+													"type": "default"
+												},
+												{
+													"key": "description",
+													"value": "Geyser",
+													"type": "default"
+												}
+											],
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/parcour/189",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"parcour",
+												"189"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Non autorisé",
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "Parc National d'Ankarana",
+													"type": "default"
+												},
+												{
+													"key": "description",
+													"value": "Le Parc National d’Ankarana est situé dans le Nord de la Grande île, au sein de la province de Diego Suarez",
+													"type": "default"
+												}
+											],
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/parcour/7",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"parcour",
+												"7"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CREATE Pathway",
+							"item": [
+								{
+									"name": "Paramètre(s) invalide(s)  (description ou titre)",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "description",
+													"value": "Iles des parfums",
+													"type": "default"
+												},
+												{
+													"key": "moderateur",
+													"value": "1,2",
+													"type": "default"
+												},
+												{
+													"key": "illus",
+													"contentType": "",
+													"type": "file",
+													"src": "/C:/Users/ASUS/Downloads/bee3dc49d331140654537956a538d179.jpg"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/parcours",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"parcours"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Paramètre invalide (modérateur)",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "default"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "Nosy be",
+													"contentType": "",
+													"type": "default"
+												},
+												{
+													"key": "description",
+													"value": "Iles des parfums",
+													"type": "default"
+												},
+												{
+													"key": "moderateur",
+													"value": "1,2,45",
+													"type": "default"
+												},
+												{
+													"key": "illus",
+													"contentType": "",
+													"type": "file",
+													"src": "/C:/Users/ASUS/Downloads/nosybe.jpg"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/parcours",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"parcours"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Alice\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTUDA4VVFSUi90OTRGRFltQWlTWVcySUFkMlV1Zzh5b2dKNG5aZ09HNEJoUEkzT3hqR1ppZFdXWm00YTRoVjJsQmdWRkpUUHdLZkJObytBQkVDMXRxV3Q0c0hIdmFFS2JiTjcvOS9YdHplZ1UxYTJBdU1VeElHMll5VDRRS2JXYUVTaXp5M0FqWEMzT0xKa1pYSUpZS1lKc21jSHNxQVZRaUNFVHM0RVcwdy9aWlhUS1YxRmM2TzhoZG8ydGdWcHZram5ITHNCUVB0TmtONzdtNU52aVBRRWtkdkF0Z1pCMG1HT2M2VjI1WnEyWTNFd2JqZFJndlo1SG11Mzcwa3RNTktpZVl0TVBRRVZTc0l6R09ZSlRsYmx1VHFrRHJZT3pXYk82RXJMZlFOU0o0bWpGcnlkMS9TVnJPVy9mMzNxYWlCSHR3Q05WdVZxRkQzYjMxME5EemhJdGFTa290dExMVGJaWHFXR3dKTDA3OC9jbHZGOGUvK3UwQWdEcVplZmlmY3Y1NkFmcG5HOWR2aXFJcjNNR3JJZXNsck5ITnlNMUV5YnhtMEN0Zi92ejQvZVRxeTZjbnBPd1I3eCsvaituNXUrWjZpenJObUdGT0QrMklhQStxL2lVUStjTEQ1SU10OU1LV1NET0o5S0tVdy9oZW9pU211RldqNWFCdkI4L2FyZWJxNXVwSzFQUmZ0WGtwT0pMbzh5S3pYMVlZYVZyVjBkK3Y1OGRUdjRuZ0E5VDJtY3lSS2g4dlFjdDUya0h6K2ZSa2N2VEhuNk1pd09BeDN3QUVnNU1NRUFNQUFBPT0iLCJzdWIiOiJBbGljZSIsInJvbGVzIjpbIlVTRVJfUk9MRSJdLCJpc3MiOiJTcHJpbmcgU2VjdXJpdHkgUkVTVCBHcmFpbHMgUGx1Z2luIiwiZXhwIjoxNjgzNDgwMTE0LCJpYXQiOjE2ODM0NzY1MTR9.vZCo04Rz27rsOKftKLGp9lxBjYTm0R88sKGu8ghwpbk",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

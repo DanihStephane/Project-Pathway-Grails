@@ -1,0 +1,4 @@
+config:
+  illustrations:
+    basePath: E:\Finoana\MBDS\groovy\projet\git\projet-chemins-zotoavina-51-finoana-47-danih-22\grails-app\assets\images
+    baseUrl: http://localhost:8080/assets/
